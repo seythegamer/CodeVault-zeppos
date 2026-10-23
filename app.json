@@ -1,0 +1,58 @@
+{
+  "configVersion": "v3",
+  "app": {
+    "appType": "app",
+    "version": {
+      "code": 11,
+      "name": "1.0.10"
+    },
+    "appId": 20001,
+    "appName": "Code Vault",
+    "icon": "icon.png",
+    "vender": "local",
+    "description": "QR, barcode and 2D code wallet for Amazfit Active 2"
+  },
+  "runtime": {
+    "apiVersion": {
+      "compatible": "4.0",
+      "target": "4.0",
+      "minVersion": "4.0"
+    }
+  },
+  "targets": {
+    "gt": {
+      "module": {
+        "page": {
+          "pages": [
+            "page/home/index.page",
+            "page/view/index.page",
+            "page/qr/index.page"
+          ]
+        },
+        "app-side": {
+          "path": "app-side/index"
+        },
+        "setting": {
+          "path": "setting/index"
+        }
+      },
+      "platforms": [
+        {
+          "st": "r",
+          "dw": 466
+        }
+      ]
+    }
+  },
+  "permissions": ["data:os.device.info", "device:os.local_storage"],
+  "i18n": {
+    "en-US": {
+      "name": "Code Vault"
+    },
+    "pl-PL": {
+      "name": "Code Vault"
+    }
+  },
+  "defaultLanguage": "en-US",
+  "debug": false
+}

@@ -1,0 +1,26 @@
+{
+  "name": "code-vault",
+  "version": "1.0.0",
+  "description": "QR, barcode and 2D code wallet for Zepp OS / Amazfit Active 2",
+  "type": "module",
+  "main": "app.js",
+  "private": true,
+  "scripts": {
+    "test": "node test/run.mjs",
+    "pretest": "node scripts/patch-etiket.mjs",
+    "build": "zeus build",
+    "prebuild": "node scripts/patch-etiket.mjs",
+    "dev": "zeus dev",
+    "predev": "node scripts/patch-etiket.mjs",
+    "preview": "zeus preview",
+    "prepreview": "node scripts/patch-etiket.mjs",
+    "postinstall": "node scripts/patch-etiket.mjs"
+  },
+  "devDependencies": {
+    "@zeppos/device-types": "^3.0.0"
+  },
+  "dependencies": {
+    "@zeppos/zml": "^0.0.38",
+    "etiket": "^1.0.0"
+  }
+}
