@@ -415,8 +415,7 @@ Coverage:
 
 Not covered:
 
-- ❌ testing on a physical watch,
-- ❌ scanning with a physical reader,
+- ❌ not every code-type has been tested with a scanner,
 - ❌ CI,
 - ❌ visual regression tests,
 - ❌ firmware regression tests.
